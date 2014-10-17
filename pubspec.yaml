@@ -1,0 +1,7 @@
+name: tuple
+version: 0.1.0
+author: Boris Kaul <localvoid@gmail.com>
+description: Tuple data structure
+homepage: https://github.com/localvoid/tuple
+environment:
+  sdk: '>=1.6.0'
