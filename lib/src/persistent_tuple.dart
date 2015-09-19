@@ -20,6 +20,12 @@ class PersistentTuple2<T1, T2> {
 
   @override
   String toString() => '[$i1, $i2]';
+
+  @override
+  bool operator ==(o) => o is Tuple2 && o.i1 == i1 && o.i2 == i2;
+
+  @override
+  int get hashCode => _hash([i1.hashCode, i2.hashCode]);
 }
 
 class PersistentTuple3<T1, T2, T3> {
@@ -43,6 +49,12 @@ class PersistentTuple3<T1, T2, T3> {
 
   @override
   String toString() => '[$i1, $i2, $i3]';
+
+  @override
+  bool operator ==(o) => o is Tuple3 && o.i1 == i1 && o.i2 == i2 && o.i3 == i3;
+
+  @override
+  int get hashCode => _hash([i1.hashCode, i2.hashCode, i3.hashCode]);
 }
 
 class PersistentTuple4<T1, T2, T3, T4> {
@@ -71,6 +83,14 @@ class PersistentTuple4<T1, T2, T3, T4> {
 
   @override
   String toString() => '[$i1, $i2, $i3, $i4]';
+
+  @override
+  bool operator ==(o) =>
+      o is Tuple4 && o.i1 == i1 && o.i2 == i2 && o.i3 == i3 && o.i4 == i4;
+
+  @override
+  int get hashCode =>
+      _hash([i1.hashCode, i2.hashCode, i3.hashCode, i4.hashCode]);
 }
 
 class PersistentTuple5<T1, T2, T3, T4, T5> {
@@ -104,4 +124,16 @@ class PersistentTuple5<T1, T2, T3, T4, T5> {
 
   @override
   String toString() => '[$i1, $i2, $i3, $i4, $i5]';
+
+  @override
+  bool operator ==(o) => o is Tuple5 &&
+      o.i1 == i1 &&
+      o.i2 == i2 &&
+      o.i3 == i3 &&
+      o.i4 == i4 &&
+      o.i5 == i5;
+
+  @override
+  int get hashCode =>
+      _hash([i1.hashCode, i2.hashCode, i3.hashCode, i4.hashCode, i5.hashCode]);
 }

@@ -37,5 +37,6 @@
 /// ```
 library tuple;
 
+part 'package:tuple/src/hash.dart';
 part 'package:tuple/src/tuple.dart';
 part 'package:tuple/src/persistent_tuple.dart';
