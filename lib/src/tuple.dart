@@ -10,6 +10,7 @@ class Tuple2<T1, T2> {
 
   Tuple2(this.i1, this.i2);
 
+  @override
   String toString() => '[$i1, $i2]';
 }
 
@@ -20,6 +21,7 @@ class Tuple3<T1, T2, T3> {
 
   Tuple3(this.i1, this.i2, this.i3);
 
+  @override
   String toString() => '[$i1, $i2, $i3]';
 }
 
@@ -31,6 +33,7 @@ class Tuple4<T1, T2, T3, T4> {
 
   Tuple4(this.i1, this.i2, this.i3, this.i4);
 
+  @override
   String toString() => '[$i1, $i2, $i3, $i4]';
 }
 
@@ -43,5 +46,6 @@ class Tuple5<T1, T2, T3, T4, T5> {
 
   Tuple5(this.i1, this.i2, this.i3, this.i4, this.i5);
 
+  @override
   String toString() => '[$i1, $i2, $i3, $i4, $i5]';
 }

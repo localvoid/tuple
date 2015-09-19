@@ -18,6 +18,7 @@ class PersistentTuple2<T1, T2> {
     return new PersistentTuple2<T1, T2>(i1, v);
   }
 
+  @override
   String toString() => '[$i1, $i2]';
 }
 
@@ -40,6 +41,7 @@ class PersistentTuple3<T1, T2, T3> {
     return new PersistentTuple3<T1, T2, T3>(i1, i2, v);
   }
 
+  @override
   String toString() => '[$i1, $i2, $i3]';
 }
 
@@ -67,6 +69,7 @@ class PersistentTuple4<T1, T2, T3, T4> {
     return new PersistentTuple4<T1, T2, T3, T4>(i1, i2, i3, v);
   }
 
+  @override
   String toString() => '[$i1, $i2, $i3, $i4]';
 }
 
@@ -99,5 +102,6 @@ class PersistentTuple5<T1, T2, T3, T4, T5> {
     return new PersistentTuple5<T1, T2, T3, T4, T5>(i1, i2, i3, i4, v);
   }
 
+  @override
   String toString() => '[$i1, $i2, $i3, $i4, $i5]';
 }
